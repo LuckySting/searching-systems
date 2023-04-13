@@ -1,0 +1,277 @@
+[
+  {
+    "@id": "_:Beans",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/contains": [
+      {
+        "@id": "_:Gluten"
+      }
+    ],
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:ChilliConCarne"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Beans"
+      }
+    ]
+  },
+  {
+    "@id": "_:Gluten",
+    "@type": [
+      "http://example.org/Content"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Gluten"
+      }
+    ]
+  },
+  {
+    "@id": "_:ChilliConCarne",
+    "@type": [
+      "http://example.org/Dish"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Chilli con carne"
+      }
+    ]
+  },
+  {
+    "@id": "_:WheatFlour",
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:Pizza"
+      }
+    ]
+  },
+  {
+    "@id": "_:Pizza",
+    "@type": [
+      "http://example.org/Dish"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Pizza"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ingridient_of",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/Ingridient"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Content",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/Ingridient",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#member": [
+      {
+        "@id": "http://example.org/Dish"
+      }
+    ]
+  },
+  {
+    "@id": "_:Tomato",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/contains": [
+      {
+        "@id": "_:Salt"
+      }
+    ],
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:Pizza"
+      },
+      {
+        "@id": "_:ChilliConCarne"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Tomato"
+      }
+    ]
+  },
+  {
+    "@id": "_:Salt",
+    "@type": [
+      "http://example.org/Content"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Salt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Dish",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ]
+  },
+  {
+    "@id": "_:BlackPepper",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/contains": [
+      {
+        "@id": "_:Peper"
+      }
+    ],
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:Pizza"
+      },
+      {
+        "@id": "_:ChilliConCarne"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Black pepper"
+      }
+    ]
+  },
+  {
+    "@id": "_:Peper",
+    "@type": [
+      "http://example.org/Content"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Peper"
+      }
+    ]
+  },
+  {
+    "@id": "_:Celery",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:ChilliConCarne"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Celery"
+      }
+    ]
+  },
+  {
+    "@id": "_:Bief",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/ingridient_of": [
+      {
+        "@id": "_:Pizza"
+      },
+      {
+        "@id": "_:ChilliConCarne"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Bief"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/contains",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/Ingridient"
+      }
+    ]
+  },
+  {
+    "@id": "_:Cheese",
+    "@type": [
+      "http://example.org/Ingridient"
+    ],
+    "http://example.org/contains": [
+      {
+        "@id": "_:Lactose"
+      },
+      {
+        "@id": "_:Gluten"
+      }
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Cheese"
+      },
+      {
+        "@language": "en",
+        "@value": "Wheat Flour"
+      }
+    ]
+  },
+  {
+    "@id": "_:Lactose",
+    "@type": [
+      "http://example.org/Content"
+    ],
+    "http://example.org/title": [
+      {
+        "@language": "en",
+        "@value": "Lactose"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/title",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/Content"
+      },
+      {
+        "@id": "http://example.org/Ingridient"
+      },
+      {
+        "@id": "http://example.org/Dish"
+      }
+    ]
+  }
+]
